@@ -61,7 +61,7 @@
                     <children>
                         <ImageView fx:id="imageCerrar" fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                             <image>
-                                <Image url="@Drawables/Vector-2.png" />
+                                <Image url="@Drawables/ImagenCerrarVentana.png" />
                             </image>
                             <HBox.margin>
                                 <Insets left="6.0" right="4.0" top="2.0" />
@@ -69,7 +69,7 @@
                         </ImageView>
                         <ImageView fx:id="imageAgrandar" fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                             <image>
-                                <Image url="@Drawables/Vector-1.png" />
+                                <Image url="@Drawables/ImagenMaximizarVentana.png" />
                             </image>
                             <HBox.margin>
                                 <Insets top="2.0" />
@@ -77,7 +77,7 @@
                         </ImageView>
                         <ImageView fx:id="imageMinimizar" fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
                             <image>
-                                <Image url="@Drawables/Vector.png" />
+                                <Image url="@Drawables/ImagenMinimizarVentana.png" />
                             </image>
                             <HBox.margin>
                                 <Insets top="13.0" />
@@ -98,6 +98,35 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@Drawables/ImagenHomeUnselected.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                  <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@Drawables/ImagenChampionsUnselected.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                  <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </children>
         </GridPane>
     </left>
 </BorderPane>
