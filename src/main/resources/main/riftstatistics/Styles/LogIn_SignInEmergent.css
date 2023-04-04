@@ -1,0 +1,52 @@
+#borderPanePrincipal {
+    -fx-border-radius: 15px;
+}
+
+#borderPanePrincipal {
+    -fx-background-color: #363A38;
+}
+
+#gridPanePrincipalTop {
+    -fx-background-color: #3D4956;
+}
+
+#labelDontHaveAcc {
+    -fx-text-fill: #FFFFFF;
+}
+
+#labelSignIn {
+    -fx-text-fill: #3787FF;
+}
+
+#botonLogIn {
+    -fx-box-sizing: border-box;
+
+    /* Auto layout */
+    -fx-display: flex;
+    -fx-flex-direction: row;
+    -fx-align-items: flex-start;
+    -fx-padding: 10px 10px;
+    -fx-gap: 10px;
+
+    -fx-font-smoothing-type: auto;
+
+    -fx-background-color: #E79F6E;
+    -fx-border-color: #824D3B;
+    -fx-border-width: 4px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 17px;
+
+    -fx-min-width: 180px;
+    -fx-max-width: 180px;
+    -fx-min-height: 80px;
+    -fx-max-height: 80px;
+}
+
+#labelPassword, #labelUsername {
+    -fx-text-fill: #FFFFFF;
+}
+
+#textAreaPassword, #textAreaUsername {
+    -fx-background-color: #6C706E;
+    -fx-text-fill: #FFFFFF;
+}
