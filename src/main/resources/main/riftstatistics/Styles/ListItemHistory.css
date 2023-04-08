@@ -1,0 +1,15 @@
+#borderPanePrincipalFondo {
+    -fx-background-color: #333d46;
+}
+
+#labelResultadoPartida {
+    -fx-text-fill: rgb(239, 191, 108);
+    -fx-font-smoothing-type: auto;
+    -fx-alignment: center;
+}
+
+#labelPosicion, #labelNombre, #labelKDA, #labelEstadisticaKDA, #labelTipoPartida, #labelFechaPartida, #labelCs, #labelCsMin, #labelKP, #labelTiempoPartida {
+    -fx-text-fill: #C0C2CB;
+    -fx-font-smoothing-type: auto;
+    -fx-alignment: center;
+}

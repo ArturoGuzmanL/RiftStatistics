@@ -1,0 +1,31 @@
+#imageAgrandar {
+    -fx-padding: 0px 0px 0px 240px;
+}
+
+#imageCerrar {
+    -fx-padding: 0px 0px 0px 480px;
+}
+
+#imageCerrar:hover, #imageAgrandar:hover, #imageMinimizar:hover {
+    -fx-cursor: hand;
+}
+#textFieldBuscador, #borderPanePrincipalCentro {
+    -fx-background-color: #363A38;
+}
+
+#gridPanePrincipalBarraBuscador, #gridPrincipalMenu {
+    -fx-background-color: #3D4956;
+}
+
+#hBoxMensajeCuenta {
+    -fx-background-color: #3D4956;
+}
+
+#labelMensajeCuenta {
+    -fx-text-fill: #C0C2CB;
+}
+
+#labelMensajeCuenta:hover {
+    -fx-text-fill: #e0e0e8;
+    -fx-cursor: hand;
+}

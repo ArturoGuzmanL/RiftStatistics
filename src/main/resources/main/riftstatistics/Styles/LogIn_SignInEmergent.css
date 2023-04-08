@@ -15,10 +15,12 @@
 }
 
 #labelSignIn {
+    -fx-cursor: hand;
     -fx-text-fill: #3787FF;
 }
 
-#botonLogIn {
+#botonLogIn, #botonSigIn {
+    -fx-cursor: hand;
     -fx-box-sizing: border-box;
 
     /* Auto layout */
@@ -42,11 +44,19 @@
     -fx-max-height: 80px;
 }
 
-#labelPassword, #labelUsername {
+#labelPassword, #labelUsername, #labelEmail {
     -fx-text-fill: #FFFFFF;
 }
 
-#textAreaPassword, #textAreaUsername {
+#labelIncorrectPassword {
+    -fx-text-fill: #FD3E3E;
+}
+
+#imageCerrarEmergente {
+    -fx-cursor: hand;
+}
+
+#textAreaPassword, #textAreaUsername, #textAreaEmail {
     -fx-background-color: #6C706E;
     -fx-text-fill: #FFFFFF;
 }

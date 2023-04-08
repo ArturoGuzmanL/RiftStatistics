@@ -85,21 +85,21 @@
                   <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../Drawables/ImagenHomeUnselected.png" />
+                        <Image url="@../Drawables/GeneralImages/ImagenHomeUnselected.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../Drawables/ImagenChampionsUnselected.png" />
+                        <Image url="@../Drawables/GeneralImages/ImagenChampionsUnselected.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../Drawables/ImagenTierlistUnselected.png" />
+                        <Image url="@../Drawables/GeneralImages/ImagenTierlistUnselected.png" />
                      </image></ImageView>
                   <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../Drawables/ImagenPatchnotesUnselected.png" />
+                        <Image url="@../Drawables/GeneralImages/ImagenPatchnotesUnselected.png" />
                      </image></ImageView>
                </children>
             </GridPane>
@@ -121,7 +121,7 @@
          <children>
             <ImageView fx:id="imageLogo" fitHeight="41.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Drawables/ImagenLogoRiftStatisticsUnselected.png" />
+                  <Image url="@../Drawables/GeneralImages/ImagenLogoRiftStatisticsUnselected.png" />
                </image>
                <GridPane.margin>
                   <Insets left="5.0" />
@@ -129,21 +129,21 @@
             </ImageView>
             <ImageView fx:id="imageAvanzar" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@../Drawables/ImagenAvanzarPagina.png" />
+                  <Image url="@../Drawables/GeneralImages/ImagenAvanzarPagina.png" />
                </image>
                <GridPane.margin>
                   <Insets right="9.0" />
                </GridPane.margin></ImageView>
             <ImageView fx:id="imageRecargar" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@../Drawables/ImagenRecargarPagina.png" />
+                  <Image url="@../Drawables/GeneralImages/ImagenRecargarPagina.png" />
                </image>
                <GridPane.margin>
                   <Insets right="29.0" />
                </GridPane.margin></ImageView>
             <ImageView fx:id="imageRetroceder" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                <image>
-                  <Image url="@../Drawables/ImagenRetrocederPagina.png" />
+                  <Image url="@../Drawables/GeneralImages/ImagenRetrocederPagina.png" />
                </image>
                <GridPane.margin>
                   <Insets right="54.0" />
@@ -166,7 +166,7 @@
                <children>
                   <ImageView fx:id="imageCerrar" fitHeight="33.0" fitWidth="73.0" onMouseClicked="#imageViewCloseOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../Drawables/imageCerrar.png" />
+                        <Image url="@../Drawables/GeneralImages/imageCerrar.png" />
                      </image>
                      <GridPane.margin>
                         <Insets />
@@ -174,7 +174,7 @@
                   </ImageView>
                   <ImageView fx:id="imageAgrandar" fitHeight="35.0" fitWidth="40.0" onMouseClicked="#imageViewMaxiOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../Drawables/imageAgrandar.png" />
+                        <Image url="@../Drawables/GeneralImages/imageAgrandar.png" />
                      </image>
                      <GridPane.margin>
                         <Insets right="26.0" />
@@ -182,7 +182,7 @@
                   </ImageView>
                   <ImageView fx:id="imageMinimizar" fitHeight="31.0" fitWidth="26.0" onMouseClicked="#imageViewMinimizeOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../Drawables/imageMinimizar.png" />
+                        <Image url="@../Drawables/GeneralImages/imageMinimizar.png" />
                      </image>
                      <GridPane.margin>
                         <Insets right="54.0" />

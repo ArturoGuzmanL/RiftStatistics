@@ -23,6 +23,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
+import main.riftstatistics.rift.BDDConnection.BDDConnection;
 
 import java.io.IOException;
 import java.net.URL;
@@ -31,8 +32,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class NotLogWindowController implements Initializable {
-
-    String pathImages = Objects.requireNonNull(NotLogWindowController.class.getResource("/main/riftstatistics/Drawables/")).toExternalForm();
+    String pathImages = Objects.requireNonNull(NotLogWindowController.class.getResource("/main/riftstatistics/Drawables/GeneralImages")).toExternalForm();
     private double xOffset = 0;
     private double yOffset = 0;
     private Stage stage;
@@ -74,6 +74,7 @@ public class NotLogWindowController implements Initializable {
     private Region areaClicks3;
     @FXML
     private Region areaClicks4;
+    private FadeTransition fadeOut;
 
     @Override
     public void initialize (URL url, ResourceBundle resourceBundle) {
@@ -162,7 +163,7 @@ public class NotLogWindowController implements Initializable {
             gridPaneFadeIn.play();
         });
 
-
+        this.fadeOut = fadeOut;
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/riftstatistics/Views/LogInEmergent-view.fxml"));
         Scene scene;
@@ -175,14 +176,21 @@ public class NotLogWindowController implements Initializable {
         LogInEmergentController controller = fxmlLoader.getController();
         Stage tempStage = new Stage();
         tempStage.initOwner(this.stage);
+        controller.setControllerParent(this);
         tempStage.initStyle(StageStyle.UNDECORATED);
         tempStage.setScene(scene);
         tempStage.setX(stage.getX() + (stage.getWidth() - scene.getWidth()) / 2);
         tempStage.setY(stage.getY() + (stage.getHeight() - scene.getHeight()) / 2);
         tempStage.initModality(Modality.APPLICATION_MODAL);
         fadeIn.play();
-        tempStage.showAndWait();
+        tempStage.show();
+    }
+
+    public void doFadeOut() {
         fadeOut.play();
+    }
+    public void closeStage() {
+        stage.close();
     }
 
     public void setStage (Stage stage) {

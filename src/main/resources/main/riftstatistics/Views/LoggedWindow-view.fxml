@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="802.0" prefWidth="1313.0" stylesheets="@../Styles/LoggedWindow.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.riftstatistics.rift.Controllers.LoggedWindowController">
+    <left>
+        <GridPane fx:id="gridPrincipalMenu" prefHeight="772.0" prefWidth="121.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@../Drawables/GeneralImages/ImagenAccountUnselected.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin></ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/ImagenHomeUnselected.png" />
+                            </image>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/ImagenChampionsUnselected.png" />
+                            </image>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/ImagenTierlistUnselected.png" />
+                            </image>
+                     <GridPane.margin>
+                        <Insets top="5.0" />
+                     </GridPane.margin></ImageView>
+                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/ImagenPatchnotesUnselected.png" />
+                            </image>
+                     <GridPane.margin>
+                        <Insets top="6.0" />
+                     </GridPane.margin></ImageView>
+                    </children>
+                </GridPane>
+            </children>
+        </GridPane>
+    </left>
+    <top>
+        <GridPane fx:id="gridPanePrincipalBarraBuscador" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="imageAvanzar" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@../Drawables/GeneralImages/ImagenAvanzarPaginaUnavailable.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets right="9.0" />
+                    </GridPane.margin></ImageView>
+                <ImageView fx:id="imageRecargar" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@../Drawables/GeneralImages/ImagenRecargarPagina.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets right="29.0" />
+                    </GridPane.margin></ImageView>
+                <ImageView fx:id="imageRetroceder" fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@../Drawables/GeneralImages/ImagenRetrocederPaginaUnavailable.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets right="54.0" />
+                    </GridPane.margin></ImageView>
+                <TextField fx:id="textFieldBuscador" promptText="Search summoner..." GridPane.columnIndex="2" />
+                <Region fx:id="areaClicks3" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="3" />
+                <Region fx:id="areaClicks2" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="1" />
+                <GridPane GridPane.columnIndex="4">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fx:id="imageCerrar" fitHeight="33.0" fitWidth="73.0" onMouseClicked="#imageViewCloseOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/imageCerrar.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageAgrandar" fitHeight="35.0" fitWidth="40.0" onMouseClicked="#imageViewMaxiOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/imageAgrandar.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets right="26.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageMinimizar" fitHeight="31.0" fitWidth="26.0" onMouseClicked="#imageViewMinimizeOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                            <image>
+                                <Image url="@../Drawables/GeneralImages/imageMinimizar.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets right="54.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                        <Region fx:id="areaClicks4" prefHeight="30.0" prefWidth="291.0" />
+                    </children>
+                </GridPane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="38.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="225.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                      <Region fx:id="areaClicks1" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="1" />
+                      <ImageView fx:id="imageLogo" fitHeight="41.0" fitWidth="27.0" onMouseClicked="#sideMenuOpenOnAction" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../Drawables/GeneralImages/LogoAnimation/ImagenLogoRiftStatistics1.png" />
+                          </image>
+                          <GridPane.margin>
+                              <Insets left="6.0" top="5.0" />
+                          </GridPane.margin>
+                      </ImageView>
+               </children>
+            </GridPane>
+            </children>
+        </GridPane>
+    </top>
+   <center>
+      <BorderPane fx:id="borderPanePrincipalCentro" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <GridPane fx:id="gridPaneMensajeCuenta" prefHeight="48.0" prefWidth="1275.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints fx:id="gridPaneMensajeCuentaCelda1" maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox fx:id="hBoxMensajeCuenta" alignment="BASELINE_CENTER" prefHeight="38.0" prefWidth="1257.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <children>
+                        <Label fx:id="labelMensajeCuenta" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="763.0" text="Click here to link your league of legends account to your profile to easily see information about your profile!" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+            </GridPane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
