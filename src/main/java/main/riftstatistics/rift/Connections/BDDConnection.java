@@ -1,10 +1,7 @@
-package main.riftstatistics.rift.BDDConnection;
-
-import org.apache.commons.codec.digest.DigestUtils;
+package main.riftstatistics.rift.Connections;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class BDDConnection {

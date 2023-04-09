@@ -9,16 +9,17 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane prefHeight="802.0" prefWidth="1313.0" stylesheets="@../Styles/LoggedWindow.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.riftstatistics.rift.Controllers.LoggedWindowController">
     <left>
-        <GridPane fx:id="gridPrincipalMenu" prefHeight="772.0" prefWidth="121.0" BorderPane.alignment="CENTER">
+        <GridPane fx:id="gridPrincipalMenu" onMouseExited="#gridPrincipalMouseExited" prefHeight="772.0" prefWidth="168.0" BorderPane.alignment="CENTER">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="59.0" minWidth="10.0" prefWidth="49.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="119.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -26,7 +27,71 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <GridPane>
+            <GridPane fx:id="gridPaneMenulabels" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane fx:id="paneLabelNombreCuentaBehind" prefHeight="200.0" prefWidth="200.0" />
+                  <Label fx:id="labelNombreCuenta" text="Nombre Cuenta" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="9.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Pane fx:id="paneLabelNombreCuenta" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="paneLabelCuentaHomeBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <Label fx:id="labelCuentaHome" text="Cuenta" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="9.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Pane fx:id="paneLabelCuentaHome" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <Pane fx:id="paneLabelCampeonesBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <Label fx:id="labelCampeones" text="Campeones" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="9.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Pane fx:id="paneLabelCampeones" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <Pane fx:id="paneLabelEstadisticasBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                  <Label fx:id="labelEstadisticas" text="Estadisticas" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="9.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Pane fx:id="paneLabelEstadisticas" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                  <Pane fx:id="paneLabelNotasParcheBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                  <Label fx:id="labelNotasParche" text="Notas del parche" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="9.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Pane fx:id="paneLabelNotasParche" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+                <GridPane fx:id="gridPaneMenuImages" onMouseEntered="#menuGridImageMouseEntered">
                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -38,14 +103,17 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Pane fx:id="paneImageCuentaBehind" prefHeight="200.0" prefWidth="200.0" />
+                        <ImageView fx:id="imageCuenta" fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@../Drawables/GeneralImages/ImagenAccountUnselected.png" />
                      </image>
                      <GridPane.margin>
-                        <Insets top="10.0" />
+                        <Insets top="5.0" />
                      </GridPane.margin></ImageView>
-                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Pane fx:id="paneImageCuenta" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane fx:id="paneimageCuentaHomeBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                        <ImageView fx:id="imageCuentaHome" fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/ImagenHomeUnselected.png" />
                             </image>
@@ -53,7 +121,9 @@
                         <Insets top="5.0" />
                      </GridPane.margin>
                         </ImageView>
-                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Pane fx:id="paneimageCuentaHome" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <Pane fx:id="paneImageCampeonesBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                        <ImageView fx:id="imageCampeones" fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/ImagenChampionsUnselected.png" />
                             </image>
@@ -61,27 +131,36 @@
                         <Insets top="5.0" />
                      </GridPane.margin>
                         </ImageView>
-                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Pane fx:id="paneImageCampeones" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <Pane fx:id="paneImageEstadisticasBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                        <ImageView fx:id="imageEstadisticas" fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/ImagenTierlistUnselected.png" />
                             </image>
                      <GridPane.margin>
                         <Insets top="5.0" />
                      </GridPane.margin></ImageView>
-                        <ImageView fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <Pane fx:id="paneImageEstadisticas" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                  <Pane fx:id="paneImageNotasParcheBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                        <ImageView fx:id="imageNotasParche" fitHeight="31.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/ImagenPatchnotesUnselected.png" />
                             </image>
                      <GridPane.margin>
                         <Insets top="6.0" />
                      </GridPane.margin></ImageView>
+                  <Pane fx:id="paneImageNotasParche" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
                     </children>
                 </GridPane>
+            <Pane fx:id="gridPaneMenuFondo1" onMouseEntered="#menuFondo1MouseEntered" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <Pane fx:id="gridPaneMenuFondo3" onMouseEntered="#menuFondo3MouseEntered" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <Pane fx:id="gridPaneMenuFondo2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane fx:id="gridPaneMenuFondo4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             </children>
         </GridPane>
     </left>
     <top>
-        <GridPane fx:id="gridPanePrincipalBarraBuscador" BorderPane.alignment="CENTER">
+        <GridPane fx:id="gridPanePrincipalBarraBuscador" prefHeight="42.0" prefWidth="1313.0" BorderPane.alignment="CENTER">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -114,7 +193,7 @@
                     <GridPane.margin>
                         <Insets right="54.0" />
                     </GridPane.margin></ImageView>
-                <TextField fx:id="textFieldBuscador" promptText="Search summoner..." GridPane.columnIndex="2" />
+                <TextField fx:id="textFieldBuscador" onMouseClicked="#buscarSummonerOnAction" text="Search summoner..." GridPane.columnIndex="2" />
                 <Region fx:id="areaClicks3" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="3" />
                 <Region fx:id="areaClicks2" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="1" />
                 <GridPane GridPane.columnIndex="4">
@@ -128,7 +207,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <ImageView fx:id="imageCerrar" fitHeight="33.0" fitWidth="73.0" onMouseClicked="#imageViewCloseOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                        <ImageView fx:id="imageCerrar" fitHeight="33.0" fitWidth="73.0" onMouseClicked="#imageViewCloseOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/imageCerrar.png" />
                             </image>
@@ -136,7 +215,7 @@
                                 <Insets />
                             </GridPane.margin>
                         </ImageView>
-                        <ImageView fx:id="imageAgrandar" fitHeight="35.0" fitWidth="40.0" onMouseClicked="#imageViewMaxiOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                        <ImageView fx:id="imageAgrandar" fitHeight="35.0" fitWidth="40.0" onMouseClicked="#imageViewMaxiOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/imageAgrandar.png" />
                             </image>
@@ -144,7 +223,7 @@
                                 <Insets right="26.0" />
                             </GridPane.margin>
                         </ImageView>
-                        <ImageView fx:id="imageMinimizar" fitHeight="31.0" fitWidth="26.0" onMouseClicked="#imageViewMinimizeOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                        <ImageView fx:id="imageMinimizar" fitHeight="31.0" fitWidth="26.0" onMouseClicked="#imageViewMinimizeOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                             <image>
                                 <Image url="@../Drawables/GeneralImages/imageMinimizar.png" />
                             </image>
@@ -157,22 +236,28 @@
                 </GridPane>
             <GridPane>
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="38.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="225.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="49.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="115.0" minWidth="10.0" prefWidth="115.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="238.0" minWidth="10.0" prefWidth="99.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                      <Region fx:id="areaClicks1" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="1" />
-                      <ImageView fx:id="imageLogo" fitHeight="41.0" fitWidth="27.0" onMouseClicked="#sideMenuOpenOnAction" pickOnBounds="true" preserveRatio="true">
+                      <Region fx:id="areaClicks1" prefHeight="30.0" prefWidth="152.0" GridPane.columnIndex="2" />
+                      <ImageView fx:id="imageLogo" fitHeight="41.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                           <image>
                               <Image url="@../Drawables/GeneralImages/LogoAnimation/ImagenLogoRiftStatistics1.png" />
                           </image>
                           <GridPane.margin>
-                              <Insets left="6.0" top="5.0" />
+                              <Insets left="12.0" top="6.0" />
                           </GridPane.margin>
                       </ImageView>
+                  <Label fx:id="labelRiftStatistics" text="RiftStatistics" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
                </children>
             </GridPane>
             </children>
@@ -199,7 +284,7 @@
                         </Label>
                      </children>
                      <GridPane.margin>
-                        <Insets left="10.0" right="10.0" />
+                        <Insets left="25.0" right="188.0" />
                      </GridPane.margin>
                   </HBox>
                </children>

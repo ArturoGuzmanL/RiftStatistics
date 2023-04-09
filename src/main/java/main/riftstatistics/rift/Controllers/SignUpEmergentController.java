@@ -17,7 +17,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import main.riftstatistics.rift.BDDConnection.BDDConnection;
+import main.riftstatistics.rift.Connections.BDDConnection;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.apache.commons.codec.digest.DigestUtils;
 

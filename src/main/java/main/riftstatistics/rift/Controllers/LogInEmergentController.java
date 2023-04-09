@@ -17,7 +17,7 @@ import javafx.fxml.FXML;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import main.riftstatistics.rift.BDDConnection.BDDConnection;
+import main.riftstatistics.rift.Connections.BDDConnection;
 
 import java.io.IOException;
 import java.net.URL;
@@ -28,6 +28,7 @@ import java.sql.SQLException;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+import main.riftstatistics.rift.ResizeHelper;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class LogInEmergentController implements Initializable {
@@ -105,7 +106,7 @@ public class LogInEmergentController implements Initializable {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/riftstatistics/Views/LoggedWindow-view.fxml"));
                     Scene scene;
                     try {
-                        scene = new Scene(fxmlLoader.load(), 1000, 850);
+                        scene = new Scene(fxmlLoader.load(), 1180, 800);
                     }catch (IOException e) {
                         e.printStackTrace();
                         return;
@@ -118,6 +119,9 @@ public class LogInEmergentController implements Initializable {
                     tempStage.setX(stage.getX() + (stage.getWidth() - scene.getWidth()) / 2);
                     tempStage.setY(stage.getY() + (stage.getHeight() - scene.getHeight()) / 2);
                     stage.close();
+                    ResizeHelper.addResizeListener(tempStage);
+                    tempStage.setMinWidth(1180);
+                    tempStage.setMinHeight(800);
                     tempStage.show();
                 } else {
                     labelIncorrectPassword.setVisible(true);

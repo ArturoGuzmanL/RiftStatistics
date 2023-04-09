@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import main.riftstatistics.rift.BDDConnection.BDDConnection;
+import main.riftstatistics.rift.Connections.BDDConnection;
 import main.riftstatistics.rift.Controllers.NotLogWindowController;
 
 import java.io.IOException;
