@@ -9,9 +9,22 @@
 #imageCerrar:hover, #imageAgrandar:hover, #imageMinimizar:hover, #paneImageCuenta:hover, #paneimageCuentaHome:hover, #paneImageCampeones:hover, #paneImageEstadisticas:hover, #paneImageNotasParche:hover, #paneLabelNombreCuenta:hover, #paneLabelCuentaHome:hover, #paneLabelCampeones:hover, #paneLabelEstadisticas:hover, #paneLabelNotasParche:hover {
     -fx-cursor: hand;
 }
-#textFieldBuscador, #borderPanePrincipalCentro, #gridPrincipalMenu {
+#borderPanePrincipalCentro, #gridPrincipalMenu {
+    -fx-background-color: #363A38;
+}
+#textFieldBuscador {
     -fx-background-color: #363A38;
     -fx-text-fill: #C0C2CB;
+    -fx-highlight-fill: null;
+    -fx-highlight-text-fill: null;
+    -fx-cursor: hand;
+}
+#labelNombreCuenta, #labelCuentaHome, #labelCampeones, #labelEstadisticas, #labelNotasParche {
+    -fx-text-fill: #C0C2CB;
+    -fx-font-family: 'Montserrat';
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+
 }
 
 #gridPanePrincipalBarraBuscador, #gridPaneMenuFondo1, #gridPaneMenuFondo2, #gridPaneMenuFondo3, #gridPaneMenuFondo4, #gridPaneMenulabels, #gridPaneMenuImages {

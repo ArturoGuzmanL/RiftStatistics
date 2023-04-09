@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317297dd-aa99-4e92-b60b-7ea1257dde91" name="Changes" comment="Mas avances javafx">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/BDDConnection/BDDConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Connections/BDDConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/LogInEmergentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/LogInEmergentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/LoggedWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/LoggedWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/NotLogWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/NotLogWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/SignUpEmergentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Controllers/SignUpEmergentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/riftstatistics/rift/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenPatchnotesSelected.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenPatchnotesSelected.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenPatchnotesUnselected.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenPatchnotesUnselected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenTierlistSelected.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenTierlistSelected.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenTierlistUnselected.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Drawables/GeneralImages/ImagenTierlistUnselected.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Styles/LoggedWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Styles/LoggedWindow.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Views/LoggedWindow-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main/riftstatistics/Views/LoggedWindow-view.fxml" afterDir="false" />
     </list>
@@ -130,7 +123,7 @@
       <workItem from="1680870719546" duration="1255000" />
       <workItem from="1680965470194" duration="430000" />
       <workItem from="1680967092321" duration="3432000" />
-      <workItem from="1681041906955" duration="11095000" />
+      <workItem from="1681041906955" duration="12678000" />
     </task>
     <servers />
   </component>

@@ -45,7 +45,7 @@
                         <Font size="13.0" />
                      </font>
                      <GridPane.margin>
-                        <Insets top="9.0" />
+                        <Insets />
                      </GridPane.margin>
                   </Label>
                   <Pane fx:id="paneLabelNombreCuenta" prefHeight="200.0" prefWidth="200.0" />
@@ -55,7 +55,7 @@
                         <Font size="13.0" />
                      </font>
                      <GridPane.margin>
-                        <Insets top="9.0" />
+                        <Insets />
                      </GridPane.margin>
                   </Label>
                   <Pane fx:id="paneLabelCuentaHome" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
@@ -65,7 +65,7 @@
                         <Font size="13.0" />
                      </font>
                      <GridPane.margin>
-                        <Insets top="9.0" />
+                        <Insets />
                      </GridPane.margin>
                   </Label>
                   <Pane fx:id="paneLabelCampeones" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
@@ -75,7 +75,7 @@
                         <Font size="13.0" />
                      </font>
                      <GridPane.margin>
-                        <Insets top="9.0" />
+                        <Insets />
                      </GridPane.margin>
                   </Label>
                   <Pane fx:id="paneLabelEstadisticas" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
@@ -85,7 +85,7 @@
                         <Font size="13.0" />
                      </font>
                      <GridPane.margin>
-                        <Insets top="9.0" />
+                        <Insets />
                      </GridPane.margin>
                   </Label>
                   <Pane fx:id="paneLabelNotasParche" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
@@ -109,7 +109,7 @@
                         <Image url="@../Drawables/GeneralImages/ImagenAccountUnselected.png" />
                      </image>
                      <GridPane.margin>
-                        <Insets top="5.0" />
+                        <Insets />
                      </GridPane.margin></ImageView>
                   <Pane fx:id="paneImageCuenta" prefHeight="200.0" prefWidth="200.0" />
                   <Pane fx:id="paneimageCuentaHomeBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
@@ -118,7 +118,7 @@
                                 <Image url="@../Drawables/GeneralImages/ImagenHomeUnselected.png" />
                             </image>
                      <GridPane.margin>
-                        <Insets top="5.0" />
+                        <Insets />
                      </GridPane.margin>
                         </ImageView>
                   <Pane fx:id="paneimageCuentaHome" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
@@ -128,7 +128,7 @@
                                 <Image url="@../Drawables/GeneralImages/ImagenChampionsUnselected.png" />
                             </image>
                      <GridPane.margin>
-                        <Insets top="5.0" />
+                        <Insets />
                      </GridPane.margin>
                         </ImageView>
                   <Pane fx:id="paneImageCampeones" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
@@ -138,7 +138,7 @@
                                 <Image url="@../Drawables/GeneralImages/ImagenTierlistUnselected.png" />
                             </image>
                      <GridPane.margin>
-                        <Insets top="5.0" />
+                        <Insets />
                      </GridPane.margin></ImageView>
                   <Pane fx:id="paneImageEstadisticas" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
                   <Pane fx:id="paneImageNotasParcheBehind" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
@@ -147,7 +147,7 @@
                                 <Image url="@../Drawables/GeneralImages/ImagenPatchnotesUnselected.png" />
                             </image>
                      <GridPane.margin>
-                        <Insets top="6.0" />
+                        <Insets />
                      </GridPane.margin></ImageView>
                   <Pane fx:id="paneImageNotasParche" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
                     </children>
@@ -193,7 +193,7 @@
                     <GridPane.margin>
                         <Insets right="54.0" />
                     </GridPane.margin></ImageView>
-                <TextField fx:id="textFieldBuscador" onMouseClicked="#buscarSummonerOnAction" text="Search summoner..." GridPane.columnIndex="2" />
+                <TextField fx:id="textFieldBuscador" editable="false" onMouseClicked="#buscarSummonerOnAction" text="Search summoner..." GridPane.columnIndex="2" />
                 <Region fx:id="areaClicks3" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="3" />
                 <Region fx:id="areaClicks2" prefHeight="30.0" prefWidth="291.0" GridPane.columnIndex="1" />
                 <GridPane GridPane.columnIndex="4">

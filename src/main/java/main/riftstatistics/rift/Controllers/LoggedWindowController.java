@@ -234,55 +234,81 @@ public class LoggedWindowController implements Initializable {
             int finalI = i;
 
             pane1.setOnMouseEntered(event -> {
-                behindPane.setStyle("-fx-background-color: #C0C2CB;");
-                behindPane2.setStyle("-fx-background-color: #C0C2CB;");
-                if (finalI ==1) {
+                openSideMenu();
+                behindPane.setStyle("-fx-background-color: #9E9E9E;");
+                behindPane2.setStyle("-fx-background-color: #9E9E9E;");
+                if (finalI == 0) {
+                    labelNombreCuenta.setStyle("-fx-text-fill: #000000;");
+                } else if (finalI == 1) {
                     imageCuentaHome.setImage(images.get(1));
+                    labelCuentaHome.setStyle("-fx-text-fill: #000000;");
                 } else if (finalI == 2) {
                     imageCampeones.setImage(images.get(3));
+                    labelCampeones.setStyle("-fx-text-fill: #000000;");
                 } else if (finalI == 3) {
                     imageEstadisticas.setImage(images.get(5));
+                    labelEstadisticas.setStyle("-fx-text-fill: #000000;");
                 } else if (finalI == 4) {
                     imageNotasParche.setImage(images.get(7));
+                    labelNotasParche.setStyle("-fx-text-fill: #000000;");
                 }
             });
             pane1.setOnMouseExited(event -> {
                 behindPane.setStyle("");
                 behindPane2.setStyle("");
-                if (finalI ==1) {
+                if (finalI == 0) {
+                    labelNombreCuenta.setStyle("-fx-text-fill: #C0C2CB;");
+                }else if (finalI == 1) {
                     imageCuentaHome.setImage(images.get(0));
+                    labelCuentaHome.setStyle("-fx-text-fill: #C0C2CB;");
                 } else if (finalI == 2) {
                     imageCampeones.setImage(images.get(2));
+                    labelCampeones.setStyle("-fx-text-fill: #C0C2CB;");
                 } else if (finalI == 3) {
                     imageEstadisticas.setImage(images.get(4));
+                    labelEstadisticas.setStyle("-fx-text-fill: #C0C2CB;");
                 } else if (finalI == 4) {
                     imageNotasParche.setImage(images.get(6));
+                    labelNotasParche.setStyle("-fx-text-fill: #C0C2CB;");
                 }
             });
             pane2.setOnMouseEntered(event -> {
-                behindPane.setStyle("-fx-background-color: #C0C2CB;");
-                behindPane2.setStyle("-fx-background-color: #C0C2CB;");
-                if (finalI ==1) {
+                openSideMenu();
+                behindPane.setStyle("-fx-background-color: #9E9E9E;");
+                behindPane2.setStyle("-fx-background-color: #9E9E9E;");
+                if (finalI == 0) {
+                    labelNombreCuenta.setStyle("-fx-text-fill: #000000;");
+                }else if (finalI == 1) {
                     imageCuentaHome.setImage(images.get(1));
+                    labelCuentaHome.setStyle("-fx-text-fill: #000000;");
                 } else if (finalI == 2) {
                     imageCampeones.setImage(images.get(3));
+                    labelCampeones.setStyle("-fx-text-fill: #000000;");
                 } else if (finalI == 3) {
                     imageEstadisticas.setImage(images.get(5));
+                    labelEstadisticas.setStyle("-fx-text-fill: #000000;");
                 } else if (finalI == 4) {
                     imageNotasParche.setImage(images.get(7));
+                    labelNotasParche.setStyle("-fx-text-fill: #000000;");
                 }
             });
             pane2.setOnMouseExited(event -> {
                 behindPane.setStyle("");
                 behindPane2.setStyle("");
-                if (finalI ==1) {
+                if (finalI == 0) {
+                    labelNombreCuenta.setStyle("-fx-text-fill: #C0C2CB;");
+                }else if (finalI == 1) {
                     imageCuentaHome.setImage(images.get(0));
+                    labelCuentaHome.setStyle("-fx-text-fill: #C0C2CB;");
                 } else if (finalI == 2) {
                     imageCampeones.setImage(images.get(2));
+                    labelCampeones.setStyle("-fx-text-fill: #C0C2CB;");
                 } else if (finalI == 3) {
                     imageEstadisticas.setImage(images.get(4));
+                    labelEstadisticas.setStyle("-fx-text-fill: #C0C2CB;");
                 } else if (finalI == 4) {
                     imageNotasParche.setImage(images.get(6));
+                    labelNotasParche.setStyle("-fx-text-fill: #C0C2CB;");
                 }
             });
         }
