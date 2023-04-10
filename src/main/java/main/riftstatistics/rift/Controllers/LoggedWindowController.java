@@ -2,29 +2,27 @@ package main.riftstatistics.rift.Controllers;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.animation.Transition;
 import javafx.animation.TranslateTransition;
-import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import main.riftstatistics.rift.ResizeHelper;
 
-import java.lang.reflect.Array;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.ResourceBundle;
-import java.util.concurrent.atomic.AtomicReferenceArray;
 
 public class LoggedWindowController implements Initializable {
     String pathImages = Objects.requireNonNull(NotLogWindowController.class.getResource("/main/riftstatistics/Drawables/GeneralImages")).toExternalForm();
@@ -335,10 +333,6 @@ public class LoggedWindowController implements Initializable {
         }
     }
 
-    public void setStage (Stage stage) {
-        this.stage = stage;
-    }
-
     @FXML
     public void menuGridImageMouseEntered (Event event) {
         openSideMenu();
@@ -361,6 +355,24 @@ public class LoggedWindowController implements Initializable {
 
     @FXML
     public void buscarSummonerOnAction (Event event) {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/riftstatistics/Views/BrowserOpen-view.fxml"));
+        Scene scene;
+        try {
+            scene = new Scene(fxmlLoader.load(), 1180, 800);
+        }catch (IOException e) {
+            e.printStackTrace();
+            return;
+        }
+        BrowserOpenController controller = fxmlLoader.getController();
+        Stage tempStage = new Stage();
+        tempStage.initStyle(StageStyle.UNDECORATED);
+        tempStage.setScene(scene);
+        controller.setStage(tempStage);
+        tempStage.setX(stage.getX() + (stage.getWidth() - scene.getWidth()) / 2);
+        tempStage.setY(stage.getY() + (stage.getHeight() - scene.getHeight()) / 2);
+        tempStage.setMinWidth(1180);
+        tempStage.setMinHeight(800);
+        tempStage.showAndWait();
     }
 
     private void openSideMenu() {
@@ -401,6 +413,10 @@ public class LoggedWindowController implements Initializable {
 
             menuVisible = true;
         }
+    }
+
+    public void setStage (Stage stage) {
+        this.stage = stage;
     }
 
     private void closeSideMenu() {

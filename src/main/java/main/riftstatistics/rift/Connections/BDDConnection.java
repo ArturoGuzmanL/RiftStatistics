@@ -1,8 +1,8 @@
 package main.riftstatistics.rift.Connections;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import org.apache.commons.codec.digest.DigestUtils;
+
+import java.sql.*;
 
 public class BDDConnection {
     private static BDDConnection instance;
@@ -42,4 +42,23 @@ public class BDDConnection {
         }
     }
 
+    public String getRiotAPIKey() {
+        try (Connection conn = connection) {
+            String query = "SELECT API_Key FROM api WHERE ID = ?";
+
+            try (PreparedStatement pstmt = conn.prepareStatement(query)) {
+                pstmt.setInt(1, 2);
+
+                try (ResultSet rs = pstmt.executeQuery()) {
+                    rs.next();
+                    String apiKey = rs.getString("API_Key");
+                    return apiKey;
+                }
+            }
+        } catch (SQLException e) {
+            // Manejar la excepción
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

@@ -1,0 +1,16 @@
+#borderPanePrincipalFondo, #borderPaneBuscadorPrincipal, #panePrincipalTop, #panePrincipalLeft, #panePrincipalRight, #panePrincipalBottom {
+    -fx-background-color: #363A38;
+}
+
+#textFieldBuscar {
+    -fx-background-color: #6C706E;
+    -fx-text-fill: #C0C2CB;
+}
+
+#labelSummonerName1, #labelSummonerRegion1, #labelSummonerName2, #labelSummonerRegion2, #labelSummonerName3, #labelSummonerRegion3, #labelSummonerName4, #labelSummonerRegion4, #labelSummonerName5, #labelSummonerRegion5, #labelSummonerName6, #labelSummonerRegion6, #labelSummonerName7, #labelSummonerRegion7, #labelSummonerName8, #labelSummonerRegion8, #labelSummonerName9, #labelSummonerRegion9, #labelSummonerName10, #labelSummonerRegion10, #labelSummonerName11, #labelSummonerRegion11, #labelSummonerName12, #labelSummonerRegion12, #labelSummonerName13, #labelSummonerRegion13, #labelSummonerName14, #labelSummonerRegion14, #labelSummonerName15, #labelSummonerRegion15, #labelSummonerName16, #labelSummonerRegion16 {
+    -fx-text-fill: #C0C2CB;
+}
+
+#imageViewCloseBrowser, #imageViewSummonerIcon1, #labelSummonerName1,  #imageViewSummonerIcon2, #labelSummonerName2, #imageViewSummonerIcon3, #labelSummonerName3, #imageViewSummonerIcon4, #labelSummonerName4, #imageViewSummonerIcon5, #labelSummonerName5, #imageViewSummonerIcon6, #labelSummonerName6, #imageViewSummonerIcon7, #labelSummonerName7, #imageViewSummonerIcon8, #labelSummonerName8, #imageViewSummonerIcon9, #labelSummonerName9, #imageViewSummonerIcon10, #labelSummonerName10, #imageViewSummonerIcon11, #labelSummonerName11, #imageViewSummonerIcon12, #labelSummonerName12, #imageViewSummonerIcon13, #labelSummonerName13, #imageViewSummonerIcon14, #labelSummonerName14, #imageViewSummonerIcon15, #labelSummonerName15, #imageViewSummonerIcon16, #labelSummonerName16 {
+    -fx-cursor: hand;
+}
